@@ -24,6 +24,7 @@ EXPOSE 3030
 
 RUN gem install dashing \
  && gem install bundler \
+ && gem install thin \
  && bundle \
  && pip3 install daemonize sseclient configobj \
  && pip3 install --upgrade requests
